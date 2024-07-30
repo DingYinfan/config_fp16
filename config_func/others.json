@@ -1,0 +1,6 @@
+[ 
+    {
+        "model_name": "Baichuan2-13B-Base",
+        "args": "--model=Baichuan2-13B-Base --device=cuda --gpu-memory-utilization=0.8 --dtype=float16 --max-model-len=4096 --dataset=./llm_samples_0.3.3/baichuan2/baichuan2-13B-base-half.json --tensor-parallel-size=2 --save-output=./output/baichuan2/baichuan2-13B-base-half.json --seed=1 --trust-remote-code"
+    }
+]

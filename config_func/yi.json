@@ -1,0 +1,21 @@
+[
+    {
+        "model_name": "Yi-6B",
+        "args": "--model=Yi-6B --device=cuda  --max-model-len=4096 --dtype=float16 --dataset=./llm_samples_new/Yi/Yi-6b-half.json --tensor-parallel-size=1 --save-output=./output/Yi/Yi-6b-half.json"
+    },
+	
+    {
+        "model_name": "Yi-34B",
+        "args": "--model=Yi-34B --device=cuda  --max-model-len=4096 --dtype=float16 --dataset=./llm_samples_new/Yi/Yi_34b.json --tensor-parallel-size=2 --save-output=./output/Yi/Yi_34b.json"
+    },
+		
+    {
+        "model_name": "Yi-1.5-6B",
+        "args": "--model=Yi-1.5-6B --device=cuda  --max-model-len=4096 --dtype=float16 --dataset=./llm_samples_new/Yi/Yi-1.5-6B-half.json --tensor-parallel-size=1 --save-output=./output/Yi/Yi-1.5-6B-half.json"
+    },
+		
+    {
+        "model_name": "Yi-1.5-34B",
+        "args": "--model=Yi-1.5-34B --device=cuda  --max-model-len=4096 --dtype=float16 --dataset=./llm_samples_new/Yi/Yi-1.5-34B-half.json --tensor-parallel-size=2 --save-output=./output/Yi/Yi-1.5-34B-half.json"
+    }
+]

@@ -1,0 +1,6 @@
+[	
+    {
+        "model_name": "Ziya-Coding-34B-v1.0",
+        "args": "--vllm-path=Ziya-Coding-34B-v1.0 --device=cuda --datasets=humaneval_gen_8dc1ac4 --data-dir=tinydata/humaneval/human-eval-v2-20210705.jsonl --work-dir=outputs --tensor-parallel-size=2 --model-kwargs dtype=float16 max_model_len=2048"
+    }
+]

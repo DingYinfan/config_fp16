@@ -1,0 +1,11 @@
+[
+    {
+        "model_name": "Baichuan2-7B-Base",
+        "args": "--model=Baichuan2-7B-Base --device=cuda --gpu-memory-utilization 0.945 --dtype=float16 --max-model-len=4096 --dataset=./llm_samples_new/baichuan2/baichuan2-7B-base-half.json --tensor-parallel-size=1 --save-output=./output/baichuan2/baichuan2-7B-base-half.json --trust-remote-code"
+    },
+    
+    {
+        "model_name": "Baichuan2-13B-Base",
+        "args": "--model=Baichuan2-13B-Base --device=cuda --gpu-memory-utilization=0.8 --dtype=float16 --max-model-len=4096 --dataset=./llm_samples_new/baichuan2/baichuan2-13B-base-half.json --tensor-parallel-size=1 --save-output=./output/baichuan2/baichuan2-13B-base-half.json --seed=1 --trust-remote-code"
+    }
+]

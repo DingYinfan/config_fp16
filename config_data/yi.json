@@ -1,0 +1,21 @@
+[	
+    {
+        "model_name": "Yi-6B",
+        "args": "--vllm-path=Yi-6B --device=cuda --datasets=mmlu_gen_79e572 --data-dir=tinydata/mmlu --work-dir=outputs --tensor-parallel-size=1 --model-kwargs dtype=float16"
+    },
+	
+    {
+        "model_name": "Yi-34B",
+        "args": "--vllm-path=Yi-34B --device=cuda --datasets=mmlu_gen_79e572 --data-dir=tinydata/mmlu --work-dir=outputs --tensor-parallel-size=2 --model-kwargs dtype=float16"
+    },
+	
+    {
+        "model_name": "Yi-1.5-6B",
+        "args": "--vllm-path=Yi-1.5-6B --device=cuda --datasets=mmlu_gen_79e572 --data-dir=tinydata/mmlu --work-dir=outputs --tensor-parallel-size=1 --model-kwargs dtype=float16"
+    },
+	
+    {
+        "model_name": "Yi-1.5-34B",
+        "args": "--vllm-path=Yi-1.5-34B --device=cuda --datasets=mmlu_gen_79e572 --data-dir=tinydata/mmlu --work-dir=outputs --tensor-parallel-size 2 --model-kwargs dtype=float16"
+    }
+]

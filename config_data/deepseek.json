@@ -1,0 +1,16 @@
+[
+    {
+        "model_name": "deepseek-coder-6.7b-base",
+        "args": "--vllm-path=deepseek-coder-6.7b-base --device=cuda --datasets=humaneval_gen_fd5822 --models=vllm_deepseek_coder.py --max-partition-size=10000000 --work-dir=outputs"
+    },
+	
+    {
+        "model_name": "deepseek-moe-16b-chat",
+        "args": "--vllm-path=deepseek-moe-16b-chat --device=cuda --datasets=mmlu_gen --models=vllm_deepseek_moe_16b.py --max-partition-size=10000000 --work-dir=outputs"
+    },
+	
+    {
+        "model_name": "deepseek-llm-67b-base",
+        "args": "--vllm-path=deepseek-llm-67b-base --device=cuda --datasets=mmlu_gen --data-dir=tinydata/mmlu --work-dir=outputs --tensor-parallel-size=4 --model-kwargs dtype=float16"
+    }
+]

@@ -1,0 +1,6 @@
+[
+    {
+        "model_name": "opt-13b",
+        "args": "--model=opt-13b --device=cuda --max-model-len=2048 --dtype=float16 --dataset=./llm_samples_new/opt-13b/opt-13b-half.json --tensor-parallel-size=1 --save-output=./output/opt-13b/opt-13b-half.json"
+    }
+]

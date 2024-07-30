@@ -1,0 +1,16 @@
+[
+    {
+        "model_name": "lmsys_vicuna-13b-v1.5",
+        "args": "--vllm-path=lmsys_vicuna-13b-v1.5 --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval --work-dir=outputs --tensor-parallel-size=1 --model-kwargs dtype=half max_model_len=4096"
+    },
+	
+    {
+        "model_name": "vicuna-13b-v1.5-16k",
+        "args": "--vllm-path=vicuna-13b-v1.5-16k --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval --work-dir=outputs --tensor-parallel-size=1 --model-kwargs dtype=float16 max_model_len=4096"
+    },
+	
+    {
+        "model_name": "vicuna-33b-v1.3",
+        "args": "--vllm-path=vicuna-33b-v1.3 --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval --work-dir=outputs --tensor-parallel-size=2 --model-kwargs dtype=float16"
+    }
+]

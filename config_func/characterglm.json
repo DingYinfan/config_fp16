@@ -1,0 +1,6 @@
+[
+    {
+        "model_name": "CharacterGLM-6B",
+        "args": "--model=CharacterGLM-6B --device=cuda --dtype=float16 --max-model-len=32768 --dataset=./llm_samples_new/characterglm/CharacterGLM-6B-half.json --tensor-parallel-size=1 --save-output=./output/characterglm/CharacterGLM-6B-half.json --trust-remote-code"
+    }
+]

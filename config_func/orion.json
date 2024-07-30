@@ -1,0 +1,6 @@
+[
+    {
+        "model_name": "Orion-14B-Base",
+        "args": "--model=Orion-14B-Base --device=cuda --dtype=float16 --dataset=./llm_samples_new/orion/Orion-14B-Base-half.json --tensor-parallel-size=1 --save-output=./output/orion/Orion-14B-Base-half.json --trust-remote-code"
+    }
+]

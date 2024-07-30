@@ -1,0 +1,6 @@
+[
+    {
+        "model_name": "bloom-7b1",
+        "args": "--model=bloom-7b1 --device=cuda --dtype=float16 --max-model-len=2048 --dataset=./llm_samples_new/bloom/bloom-7b1-half.json --tensor-parallel-size=1 --save-output=./output/bloom/bloom-7b1-half.json"
+    }
+]

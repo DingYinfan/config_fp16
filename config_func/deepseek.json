@@ -1,0 +1,16 @@
+[
+    {
+        "model_name": "deepseek-coder-6.7b-base",
+        "args": "--model=deepseek-coder-6.7b-base --device=cuda --dtype=float16 --max-model-len=4096 --dataset=./llm_samples_new/deepseek/deepseek_coder_6.7b_base-bf16-max4096-20240612.json --tensor-parallel-size=1 --save-output=./output/deepseek/deepseek_coder_6.7b_base-bf16-max4096-20240612.json --trust-remote-code"
+    },
+	
+    {
+        "model_name": "deepseek-moe-16b-chat",
+        "args": "--model=deepseek-moe-16b-chat --device=cuda --dtype=float16 --dataset=./llm_samples_new/deepseek/deepseek_moe_16b_chat-float16-max4096-20240611.json --tensor-parallel-size=1 --save-output=./output/deepseek/deepseek_moe_16b_chat-float16-max4096-20240611.json --trust-remote-code"
+    },
+	
+    {
+        "model_name": "deepseek-llm-67b-base",
+        "args": "--model=deepseek-llm-67b-base --device=cuda --dtype=float16 --dataset=./llm_samples_new/deepseek/deepseek_llm_67b_base-half.json --tensor-parallel-size=4 --save-output=./output/deepseek/deepseek_llm_67b_base-half.json --trust-remote-code"
+    }
+]

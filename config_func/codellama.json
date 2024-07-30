@@ -1,0 +1,21 @@
+[
+    {
+        "model_name": "CodeLlama-13b-Instruct-hf",
+        "args": "--model=CodeLlama-13b-Instruct-hf --device=cuda --dtype=float16 --max-model-len=10240 --dataset=./llm_samples_new/codellama/codellama_13b_instruct-half.json --tensor-parallel-size=1 --save-output=./output/codellama/codellama_13b_instruct-half.json"
+    },
+	
+    {
+        "model_name": "CodeLlama-34b-Instruct-hf",
+        "args": "--model=CodeLlama-34b-Instruct-hf --device=cuda --dtype=float16 --max-model-len=8192 --dataset=./llm_samples_new/codellama/codellama_34b_instruct-half.json --tensor-parallel-size=2 --save-output=./output/codellama/codellama_34b_instruct-half.json"
+    },
+	
+    {
+        "model_name": "CodeLlama-70b-Instruct-hf",
+        "args": "--model=CodeLlama-70b-Instruct-hf --device=cuda --dtype=float16 --max-model-len=4096 --dataset=./llm_samples_new/codellama/codellama_70b-instruct-half.json --tensor-parallel-size=4 --save-output=./output/codellama/codellama_70b-instruct-half.json"
+    },
+
+    {
+        "model_name": "CodeLlama-70b-hf",
+        "args": "--model=CodeLlama-70b-hf --device=cuda --dtype=float16 --max-model-len=10240 --dataset=./llm_samples_new/codellama/codellama_70b-half.json --tensor-parallel-size=4 --save-output=./output/codellama/codellama_70b-half.json"
+    }
+]

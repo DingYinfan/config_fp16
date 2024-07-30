@@ -1,0 +1,21 @@
+[
+    {
+        "model_name": "XuanYuan-6B",
+        "args": "--model=XuanYuan-6B --device=cuda --max-model-len 8192 --dtype=float16 --dataset=./llm_samples_new/xuanyuan/XuanYuan-6B-half.json --tensor-parallel-size=1 --save-output=./output/xuanyuan/XuanYuan-6B-half.json"
+    },
+	
+    {
+        "model_name": "XuanYuan-13B",
+        "args": "--model=XuanYuan-13B --device=cuda --max-model-len 8192 --dtype=float16 --dataset=./llm_samples_new/xuanyuan/xuanyuan-13b-half.json --tensor-parallel-size=1 --save-output=./output/xuanyuan/xuanyuan-13b-half.json"
+    },
+		
+    {
+        "model_name": "XuanYuan-70B",
+        "args": "--model=XuanYuan-70B --device=cuda --max-model-len 8192 --dtype=float16 --dataset=./llm_samples_new/xuanyuan/xuanyuan_70b-half.json --tensor-parallel-size=4 --save-output=./output/xuanyuan/xuanyuan_70b-half.json"
+    },
+			
+    {
+        "model_name": "XuanYuan2-70B",
+        "args": "--model=XuanYuan2-70B --device=cuda --dtype=float16 --dataset=./llm_samples_new/xuanyuan/XuanYuan2-70B-half.json --tensor-parallel-size=4 --save-output=./output/xuanyuan/XuanYuan2-70B-half.json"
+    }
+]

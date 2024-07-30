@@ -1,0 +1,16 @@
+[
+    {
+        "model_name": "lmsys_vicuna-13b-v1.5",
+        "args": "--model=lmsys_vicuna-13b-v1.5 --device=cuda --max-model-len=4096 --dtype=float16 --dataset=./llm_samples_new/vicuna/lmsys_vicuna-13b-v1.5-half.json --tensor-parallel-size=1 --save-output=./output/vicuna/lmsys_vicuna-13b-v1.5-half.json "
+    },
+	
+    {
+        "model_name": "vicuna-13b-v1.5-16k",
+        "args": "--model=vicuna-13b-v1.5-16k --device=cuda --max-model-len=12288 --dtype=float16 --dataset=./llm_samples_new/vicuna/vicuna-13b-v1.5-16k-half.json --tensor-parallel-size=1 --save-output=./output/vicuna/vicuna-13b-v1.5-16k-half.json"
+    },
+    	
+    {
+        "model_name": "vicuna-33b-v1.3",
+        "args": "--model=vicuna-33b-v1.3 --device=cuda  --max-model-len=2048 --dtype=float16 --dataset=./llm_samples_new/vicuna/vicuna-33b-v1.3-half.json --tensor-parallel-size=2 --save-output=./output/vicuna/vicuna-33b-v1.3-half.json"
+    }
+]

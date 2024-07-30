@@ -1,0 +1,6 @@
+[
+    {
+        "model_name": "gpt-j-6b",
+        "args": "--vllm-path=gpt-j-6b --device=cuda --datasets=mmlu_gen_79e572 --data-dir=tinydata/mmlu --work-dir=outputs"
+    }
+]

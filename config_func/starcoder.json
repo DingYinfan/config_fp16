@@ -1,0 +1,16 @@
+[
+    {
+        "model_name": "starcoderbase",
+        "args": "--model=starcoderbase --device=cuda --max-model-len=8192 --dtype=float16 --dataset=./llm_samples_new/starcoderbase/starcoderbase-half.json --tensor-parallel-size=1 --save-output=./output/starcoderbase/starcoderbase-half.json"
+    },
+	
+    {
+        "model_name": "starcoder2-7b",
+        "args": "--model=starcoder2-7b --device=cuda --dtype=float16 --dataset=./llm_samples_new/starcoder2/starcoder2_7b-half.json --tensor-parallel-size=1 --save-output=./output/starcoder2/starcoder2_7b-half.json"
+    },
+		
+    {
+        "model_name": "starcoder2-15b",
+        "args": "--model=starcoder2-15b --device=cuda --dtype=float16 --max-model-len=4096 --dataset=./llm_samples_new/starcoder2/starcoder2_15b-half.json --tensor-parallel-size=1 --save-output=./output/starcoder2/starcoder2_15b-half.json"
+    }
+]

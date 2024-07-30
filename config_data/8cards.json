@@ -1,0 +1,11 @@
+[	
+    {
+        "model_name": "llama_65B_hf",
+        "args": "--vllm-path=llama_65B_hf --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval  --work-dir=outputs --tensor-parallel-size=8 --model-kwargs dtype=float16 max_model_len=2048"
+    },
+    
+    {
+        "model_name": "llama-2-70b-hf",
+        "args": "--vllm-path=llama-2-70b-hf --device=cuda --datasets=mmlu_gen --data-dir=tinydata/mmlu --work-dir=outputs --tensor-parallel-size=8 --model-kwargs dtype=float16 gpu_memory_utilization=0.945"
+    }
+]

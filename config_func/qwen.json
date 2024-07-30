@@ -1,0 +1,57 @@
+[
+    {
+        "model_name": "Qwen-7B",
+        "args": "--model=Qwen-7B --device=cuda  --max-model-len=2048 --dtype=float16 --dataset=./llm_samples_new/qwen/Qwen-7B-half.json --tensor-parallel-size=1 --save-output=./output/qwen/Qwen-7B-half.json --trust-remote-code"
+    },
+	
+	  {
+        "model_name": "Qwen-7B-Chat",
+        "args": "--model=Qwen-7B-Chat --device=cuda  --max-model-len=2048 --dtype=bfloat16 --dataset=./llm_samples_new/qwen/qwen_7b_chat.json --tensor-parallel-size=1 --save-output=./output/qwen/qwen_7b_chat.json --trust-remote-code"
+    },
+		
+	  {
+        "model_name": "Qwen-14B-Chat-fp16",
+        "args": "--model=Qwen-14B-Chat --device=cuda  --max-model-len=2048 --dtype=float16 --dataset=./llm_samples_new/qwen/Qwen-14B-chat-half.json --tensor-parallel-size=1 --save-output=./output/qwen/Qwen-14B-chat-half.json --trust-remote-code"
+    },
+		
+	  {
+        "model_name": "Qwen-14B-Chat-bf16",
+        "args": "--model=Qwen-14B-Chat --device=cuda  --max-model-len=2048 --dtype=bfloat16 --dataset=./llm_samples_new/qwen/qwen_14b_chat.json --tensor-parallel-size=1 --save-output=./output/qwen/qwen_14b_chat.json --trust-remote-code"
+    },
+	 		
+ 	 {
+        "model_name": "Qwen-72B-Chat-fp16",
+        "args": "--model=Qwen-72B-Chat --device=cuda  --max-model-len=2048 --dtype=float16 --dataset=./llm_samples_new/qwen/Qwen-72B-chat-half.json --tensor-parallel-size=4 --save-output=./output/qwen/Qwen-72B-chat-half.json --trust-remote-code"
+    },
+		
+ 	  {
+        "model_name": "Qwen-72B-Chat-bf16",
+        "args": "--model=Qwen-72B-Chat --device=cuda  --max-model-len=2048 --dtype=bfloat16 --dataset=./llm_samples_new/qwen/qwen_72b_chat.json --tensor-parallel-size=4 --save-output=./output/qwen/qwen_72b_chat.json --trust-remote-code"
+    },
+			
+	  {
+        "model_name": "Qwen1.5-32B",
+        "args": "--model=Qwen1.5-32B --device=cuda  --max-model-len=2048 --dtype=float16 --dataset=./llm_samples_new/qwen/Qwen1.5-32B-half.json --tensor-parallel-size=2 --save-output=./output/qwen/Qwen1.5-32B-half.json --trust-remote-code"
+    },
+    
+
+   {
+        "model_name": "Qwen1.5-7B",
+        "args": "--model=Qwen1.5-7B --device=cuda --dtype=float16 --max-model-len=2048 --dataset=./llm_samples_new/qwen/Qwen1.5-7B-half.json --tensor-parallel-size=1 --save-output=./output/qwen/Qwen1.5-7B-half.json"
+   },
+    
+    {
+        "model_name": "Qwen1.5-14B-Chat",
+        "args": "--model=Qwen1.5-14B-Chat --device=cuda --dtype=float16 --max-model-len=2048 --dataset=./llm_samples_new/qwen/Qwen1.5-14B-Chat-half.json --tensor-parallel-size=1 --save-output=./output/qwen/Qwen1.5-14B-Chat-half.json"
+  },
+	
+	{
+        "model_name": "Qwen1.5-72B-Chat",
+        "args": "--model=Qwen1.5-72B-Chat --device=cuda --dtype=float16 --max-model-len=2048 --dataset=./llm_samples_new/qwen/Qwen1.5-72B-Chat-half.json --tensor-parallel-size=4 --save-output=./output/qwen/Qwen1.5-72B-Chat-half.json"
+    },
+		
+	{
+        "model_name": "Qwen-1_8B-Chat",
+        "args": "--model=Qwen-1_8B-Chat --device=cuda --dtype=bfloat16 --max-model-len=2048 --dataset=./llm_samples_new/qwen/Qwen-1_8B-Chat.json --tensor-parallel-size=1 --save-output=./output/qwen/Qwen-1_8B-Chat.json --trust-remote-code"
+    }
+]

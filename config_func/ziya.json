@@ -1,0 +1,6 @@
+[
+    {
+        "model_name": "Ziya-Coding-34B-v1.0",
+        "args": "--model=Ziya-Coding-34B-v1.0/ --device=cuda --max-model-len=4096 --dtype=float16 --dataset=./llm_samples_new/ziya/Ziya-Coding-34B-v1.0-half.json --tensor-parallel-size=2 --save-output=./output/ziya/Ziya-Coding-34B-v1.0-half.json --template=templates/template_ziya_completion.jinja"
+    }
+]

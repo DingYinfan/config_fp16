@@ -1,0 +1,6 @@
+[
+    {
+        "model_name": "codegeex2-6b",
+        "args": "--model=codegeex2-6b --device=cuda --dtype=float16 --max-model-len=8192 --dataset=./llm_samples_new/codegeex/codegeex2-6b-half.json --tensor-parallel-size=1 --save-output=./output/codegeex/codegeex2-6b-half.json --trust-remote-code"
+    }
+]

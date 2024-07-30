@@ -1,0 +1,16 @@
+[
+    {
+        "model_name": "Aquila2-34B",
+        "args": "--model=Aquila2-34B --device=cuda --dtype=float16 --max-model-len=4096 --dataset=./llm_samples_new/Aquila2/Aquila2-34B-half.json --tensor-parallel-size=2 --save-output=./output/Aquila2/Aquila2-34B-half.json"
+    },
+    
+    {
+        "model_name": "AquilaChat2-34B",
+        "args": "--model=AquilaChat2-34B --device=cuda --dtype=float16 --max-model-len=4096 --dataset=./llm_samples_new/AquilaChat2/AquilaChat2-34B-half.json --tensor-parallel-size=2 --save-output=./output/AquilaChat2/AquilaChat2-34B-half.json --trust-remote-code"
+    },
+    
+    {
+        "model_name": "AquilaChat2-34B-16K",
+        "args": "--model=AquilaChat2-34B-16K --device=cuda --dtype=float16 --max-model-len=16384 --dataset=./llm_samples_new/AquilaChat2/AquilaChat2-34B-16K-half.json --tensor-parallel-size=2 --save-output=./output/AquilaChat2/AquilaChat2-34B-16K-half.json --trust-remote-code"
+    }
+]

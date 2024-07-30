@@ -1,0 +1,31 @@
+[
+    {
+        "model_name": "internlm-7b",
+        "args": "--model=internlm-7b --device=cuda --max-model-len=2048 --dtype=float16 --dataset=./llm_samples_new/internlm/internlm_7b-half.json --tensor-parallel-size=1 --save-output=./output/internlm/internlm_7b-half.json --trust-remote-code"
+    },
+    
+    {
+        "model_name": "internlm-20b",
+        "args": "--model=internlm-20b --device=cuda --max-model-len=4096 --dtype=float16 --dataset=./llm_samples_new/internlm/internlm-20b-half.json --tensor-parallel-size=2 --save-output=./output/internlm/internlm-20b-half.json --trust-remote-code"
+    },
+	
+    {
+        "model_name": "internlm-chat-20b",
+        "args": "--model=internlm-chat-20b --device=cuda --max-model-len=4096 --dtype=float16 --dataset=./llm_samples_new/internlm/internlm-chat-20b-half.json --tensor-parallel-size=2 --save-output=./output/internlm/internlm-chat-20b-half.json --trust-remote-code"
+    },
+	
+    {
+        "model_name": "internlm2-7b",
+        "args": "--model=internlm2-7b --device=cuda --dtype=float16 --dataset=./llm_samples_new/internlm/internlm2-7b-half.json --tensor-parallel-size=1 --save-output=./output/internlm/internlm2-7b-half.json --trust-remote-code"
+    },
+		
+    {
+        "model_name": "internlm2-20b",
+        "args": "--model=internlm2-20b --device=cuda --dtype=float16 --dataset=./llm_samples_new/internlm/internlm2-20b-half.json --tensor-parallel-size=2 --save-output=./output/internlm/internlm2-20b-half.json --trust-remote-code"
+    },
+ 
+    {
+        "model_name": "internlm2-chat-20b",
+        "args": "--model=internlm2-chat-20b --device=cuda --dtype=float16 --dataset=./llm_samples_new/internlm/internlm2-chat-20b-half.json --tensor-parallel-size=2 --save-output=./output/internlm/internlm2-chat-20b-half.json --trust-remote-code"
+    }
+]

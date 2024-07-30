@@ -1,0 +1,21 @@
+[
+    {
+        "model_name": "chinese-llama-2-7b",
+        "args": "--model=chinese-llama-2-7b --device=cuda --dtype=float16 --max-model-len=4096 --dataset=./llm_samples_new/chinese-llama-2/chinese-llama-2-7b-half.json --tensor-parallel-size=1 --save-output=./output/chinese-llama-2/chinese-llama-2-7b-half.json"
+    },
+	
+    {
+        "model_name": "chinese-llama-2-7b-16k",
+        "args": "--model=chinese-llama-2-7b-16k --device=cuda --dtype=float16 --max-model-len=4096 --dataset=./llm_samples_new/chinese-llama-2/chinese-llama-2-7b-16k-half.json --tensor-parallel-size=1 --save-output=./output/chinese-llama-2/chinese-llama-2-7b-16k-half.json"
+    },
+	
+    {
+        "model_name": "chinese-llama-2-13b",
+        "args": "--model=chinese-llama-2-13b --device=cuda --dtype=float16 --max-model-len=4096 --dataset=./llm_samples_new/chinese-llama-2/chinese-llama-2-13b-half.json --tensor-parallel-size=1 --save-output=./output/chinese-llama-2/chinese-llama-2-13b-half.json"
+    },
+	
+    {
+        "model_name": "chinese-llama-2-13b-16k",
+        "args": "--model=chinese-llama-2-13b-16k --device=cuda --dtype=float16 --max-model-len=4096 --dataset=./llm_samples_new/chinese-llama-2/chinese-llama-2-13b-16k-half.json --tensor-parallel-size=1 --save-output=./output/chinese-llama-2/chinese-llama-2-13b-16k-half.json"
+    }
+]

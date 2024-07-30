@@ -1,0 +1,11 @@
+[
+    {
+        "model_name": "gpt-j-6b",
+        "args": "--model=gpt-j-6b --device=cuda --max-model-len=2048 --dtype=float16 --dataset=./llm_samples_new/gpt-j-6b/gpt-j-6b_gcu-half.json --tensor-parallel-size=1 --save-output=./output/gpt-j-6b/gpt-j-6b_gcu-half.json"
+    },
+	
+    {
+        "model_name": "gpt-neox-20b",
+        "args": "--model=gpt-neox-20b --device=cuda --max-model-len=2048 --gpu-memory-utilization 0.945 --dtype=float16 --dataset=./llm_samples_new/gpt-neox-20b/gpt-neox-20b.json --tensor-parallel-size=2 --save-output=./output/gpt-neox-20b/gpt-neox-20b.json"
+    }
+]
