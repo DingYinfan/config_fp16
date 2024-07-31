@@ -7,5 +7,10 @@
     {
         "model_name": "llama-2-70b-hf",
         "args": "--vllm-path=llama-2-70b-hf --device=cuda --datasets=mmlu_gen --data-dir=tinydata/mmlu --work-dir=outputs --tensor-parallel-size=8 --model-kwargs dtype=float16 gpu_memory_utilization=0.945"
+    },
+
+    {
+        "model_name": "mixtral-8x22b-v0.1",
+        "args": "--vllm-path=mixtral-8x22b-v0.1 --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval --batch-size=4 --max-out-len=10 --work-dir=outputs --tensor-parallel-size=8 --model-kwargs dtype=bfloat16 max_model_len=8192"
     }
 ]
