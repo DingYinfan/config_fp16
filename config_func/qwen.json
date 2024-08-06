@@ -2,7 +2,7 @@
 	  {
         "model_name": "Qwen-1_8B-Chat",
         "args": "--model=Qwen-1_8B-Chat --device=cuda --dtype=bfloat16 --max-model-len=2048 --dataset=./llm_samples_new/qwen/Qwen-1_8B-Chat.json --tensor-parallel-size=1 --save-output=./output/qwen/Qwen-1_8B-Chat.json --trust-remote-code"
-    }
+    },
     
     {
         "model_name": "Qwen-7B",
@@ -52,6 +52,6 @@
     {
         "model_name": "Qwen1.5-72B-Chat",
         "args": "--model=Qwen1.5-72B-Chat --device=cuda --dtype=float16 --max-model-len=2048 --dataset=./llm_samples_new/qwen/Qwen1.5-72B-Chat-half.json --tensor-parallel-size=4 --save-output=./output/qwen/Qwen1.5-72B-Chat-half.json"
-    },
+    }
 		
 ]

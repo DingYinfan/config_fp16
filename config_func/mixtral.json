@@ -5,7 +5,7 @@
     },
 	
     {
-        "model_name": "mixtral_8x7b_v0.1",
-        "args": "--model=mixtral_8x7b_v0.1 --device=cuda --max-model-len=4096 --dtype=float16 --dataset=./llm_samples_new/mixtral/mixtral_8x7b_v0.1-half.json --tensor-parallel-size=4 --save-output=./output/mistral-7b-v0.1/mixtral_8x7b_v0.1-half.json "
+        "model_name": "mixtral-8x7B-v0.1",
+        "args": "--model=mixtral-8x7B-v0.1 --device=cuda --max-model-len=4096 --dtype=float16 --dataset=./llm_samples_new/mixtral/mixtral_8x7b_v0.1-half.json --tensor-parallel-size=4 --save-output=./output/mistral-7b-v0.1/mixtral_8x7b_v0.1-half.json "
     }
 ]
