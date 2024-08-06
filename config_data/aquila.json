@@ -7,5 +7,10 @@
     {
         "model_name": "AquilaChat2-34B-16K",
         "args": "--vllm-path=AquilaChat2-34B-16K --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval  --work-dir=outputs --tensor-parallel-size=4 --model-kwargs dtype=float16 max_model_len=16384"
+    },
+
+    {
+        "model_name": "AquilaChat2-34B",
+        "args": "--vllm-path=AquilaChat2-34B --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval --work-dir=outputs --tensor-parallel-size=2 --model-kwargs dtype=float16"
     }
 ]

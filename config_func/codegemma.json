@@ -1,0 +1,6 @@
+[	
+    {
+        "model_name": "codegemma-7b",
+        "args": "--model=codegemma-7b --device=cuda --dataset=./llm_samples_new/codegemma/codegemma-7b-bfloat16.json --dtype=bfloat16 --max-model-len=4096 --save-output=./output/codegemma/codegemma-7b-bfloat16.json --trust-remote-code"
+    }
+]
