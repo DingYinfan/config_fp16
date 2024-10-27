@@ -1,21 +1,21 @@
 [
     {
         "model_name": "chinese-llama-2-7b",
-        "args": "--vllm-path=chinese-llama-2-7b --device=cuda --datasets=cmmlu_gen --data-dir=tinydata/cmmlu --work-dir=outputs --model-kwargs dtype=float16"
+        "args": "--vllm-path=chinese-llama-2-7b --device=cuda --datasets=cmmlu_gen --data-dir=tinydata/cmmlu --work-dir=outputs/chinese-llama-2-7b --model-kwargs dtype=float16"
     },
 	
     {
         "model_name": "chinese-llama-2-7b-16k",
-        "args": "--vllm-path=chinese-llama-2-7b-16k --device=cuda --datasets=cmmlu_gen --data-dir=tinydata/cmmlu --work-dir=outputs --model-kwargs dtype=float16 max_model_len=4096"
+        "args": "--vllm-path=chinese-llama-2-7b-16k --device=cuda --datasets=cmmlu_gen --data-dir=tinydata/cmmlu --work-dir=outputs/chinese-llama-2-7b-16k --model-kwargs dtype=float16 max_model_len=4096"
     },
 	
     {
         "model_name": "chinese-llama-2-13b",
-        "args": "--vllm-path=chinese-llama-2-13b --device=cuda --datasets=cmmlu_gen --data-dir=tinydata/cmmlu --work-dir=outputs --model-kwargs dtype=float16"
+        "args": "--vllm-path=chinese-llama-2-13b --device=cuda --datasets=cmmlu_gen --data-dir=tinydata/cmmlu --work-dir=outputs/chinese-llama-2-13b --model-kwargs dtype=float16"
     },
 	
     {
         "model_name": "chinese-llama-2-13b-16k",
-        "args": "--vllm-path=chinese-llama-2-13b-16k --device=cuda --datasets=cmmlu_gen --data-dir=tinydata/cmmlu --work-dir=outputs --model-kwargs dtype=float16 gpu_memory_utilization=0.85 max_model_len=4096"
+        "args": "--vllm-path=chinese-llama-2-13b-16k --device=cuda --datasets=cmmlu_gen --data-dir=tinydata/cmmlu --work-dir=outputs/chinese-llama-2-13b-16k --model-kwargs dtype=float16 gpu_memory_utilization=0.85 max_model_len=4096"
     }
 ]

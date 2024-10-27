@@ -1,0 +1,11 @@
+[
+    {
+        "model_name": "33b-192-old_w4a16_gptq_pad",
+        "args": "--vllm-path=33b-192-old_w4a16_gptq_pad --device=cuda --datasets=triviaqa_gen --data-dir=tinydata/triviaqa --tensor-parallel-size=4 --work-dir=./outputs/33b-192-old_w4a16_gptq_pad  --batch-size 32 --model-kwargs dtype=float16 quantization=gptq"
+    },
+
+    {
+        "model_name": "glm-4-32B_chat_vllm_convert-w4a16",
+        "args": "--vllm-path=yi-1.5-34b-chat-gptq --device cuda --datasets=ceval_gen --data-dir=ceval --work-dir=outputs --tensor-parallel-size=2 --max-out-len=10 --batch-size=4 --model-kwargs dtype=float16 max_model_len=4096"
+    }
+]

@@ -1,16 +1,16 @@
 [
     {
         "model_name": "CodeLlama-13b-Instruct-hf",
-        "args": "--vllm-path=CodeLlama-13b-Instruct-hf --device=cuda --datasets=humaneval_gen_fd5822 --data-dir=tinydata/humaneval/human-eval-v2-20210705.jsonl --work-dir=outputs --tensor-parallel-size=1 --model-kwargs dtype=float16 max_model_len=4096"
+        "args": "--vllm-path=CodeLlama-13b-Instruct-hf --device=cuda --datasets=humaneval_gen_fd5822 --data-dir=tinydata/humaneval/human-eval-v2-20210705.jsonl --work-dir=outputs/CodeLlama-13b-Instruct-hf --tensor-parallel-size=1 --model-kwargs dtype=float16 max_model_len=4096"
     },
 	
     {
         "model_name": "CodeLlama-34b-Instruct-hf",
-        "args": "--vllm-path=CodeLlama-34b-Instruct-hf --device=cuda --datasets=humaneval_gen_fd5822 --data-dir=tinydata/humaneval/human-eval-v2-20210705.jsonl --work-dir=outputs --tensor-parallel-size=2 --model-kwargs dtype=float16"
+        "args": "--vllm-path=CodeLlama-34b-Instruct-hf --device=cuda --datasets=humaneval_gen_fd5822 --data-dir=tinydata/humaneval/human-eval-v2-20210705.jsonl --work-dir=outputs/CodeLlama-34b-Instruct-hf --tensor-parallel-size=2 --model-kwargs dtype=float16"
     },
 	
     {
         "model_name": "CodeLlama-70b-Instruct-hf",
-        "args": "--vllm-path=CodeLlama-70b-Instruct-hf --device=cuda --datasets=humaneval_gen_fd5822 --data-dir=tinydata/humaneval/human-eval-v2-20210705.jsonl --work-dir=outputs --tensor-parallel-size=4 --model-kwargs dtype=float16"
+        "args": "--vllm-path=CodeLlama-70b-Instruct-hf --device=cuda --datasets=humaneval_gen_fd5822 --data-dir=tinydata/humaneval/human-eval-v2-20210705.jsonl --work-dir=outputs/CodeLlama-70b-Instruct-hf --tensor-parallel-size=4 --model-kwargs dtype=float16"
     }
 ]

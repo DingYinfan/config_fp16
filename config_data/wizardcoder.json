@@ -1,11 +1,11 @@
 [	
     {
         "model_name": "WizardCoder-15B-v1.0",
-        "args": "--vllm-path=WizardCoder-15B-v1.0 --device=cuda --datasets=humaneval_gen_6d1cc2 --data-dir=tinydata/humaneval/human-eval-v2-20210705.jsonl --models=vllm_wizardcoder_15b --work-dir=outputs --tensor-parallel-size=1 --model-kwargs dtype=float16"
+        "args": "--vllm-path=WizardCoder-15B-v1.0 --device=cuda --datasets=humaneval_gen_6d1cc2 --data-dir=tinydata/humaneval/human-eval-v2-20210705.jsonl --models=vllm_wizardcoder_15b --work-dir=outputs/WizardCoder-15B-v1.0 --tensor-parallel-size=1 --model-kwargs dtype=float16"
     },
 	
     {
         "model_name": "WizardCoder-33B-v1.1",
-        "args": "--vllm-path=WizardCoder-33B-v1.1 --device=cuda --datasets=humaneval_gen_wizardcoder --data-dir=tinydata/humaneval/human-eval-v2-20210705.jsonl --models=vllm_wizardcoder_33b --work-dir outputs"
+        "args": "--vllm-path=WizardCoder-33B-v1.1 --device=cuda --datasets=humaneval_gen_wizardcoder --data-dir=tinydata/humaneval/human-eval-v2-20210705.jsonl --models=vllm_wizardcoder_33b --work-dir outputs/WizardCoder-33B-v1.1"
     }
 ]

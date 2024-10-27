@@ -1,6 +1,6 @@
 [	
     {
         "model_name": "codegemma-7b",
-        "args": "--vllm-path=codegemma-7b --device=cuda --datasets=humaneval_gen_fd5822 --data-dir=tinydata/humaneval/human-eval-v2-20210705.jsonl --work-dir=outputs --model-kwargs dtype=bfloat16 --max-partition-size 10000000"
+        "args": "--vllm-path=codegemma-7b --device=cuda --datasets=humaneval_gen_fd5822 --data-dir=tinydata/humaneval/human-eval-v2-20210705.jsonl --work-dir=outputs/codegemma-7b --model-kwargs dtype=float16"
     }
 ]

@@ -1,16 +1,21 @@
 [
     {
         "model_name": "deepseek-coder-6.7b-base",
-        "args": "--vllm-path=deepseek-coder-6.7b-base --device=cuda --datasets=humaneval_gen_fd5822 --models=vllm_deepseek_coder.py --max-partition-size=10000000 --work-dir=outputs"
+        "args": "--vllm-path=deepseek-coder-6.7b-base --device=cuda --datasets=humaneval_gen_fd5822 --models=vllm_deepseek_coder.py --work-dir=outputs/deepseek-coder-6.7b-base"
     },
-	
+
     {
         "model_name": "deepseek-moe-16b-chat",
-        "args": "--vllm-path=deepseek-moe-16b-chat --device=cuda --datasets=mmlu_gen --models=vllm_deepseek_moe_16b.py --max-partition-size=10000000 --work-dir=outputs"
+        "args": "--vllm-path=deepseek-moe-16b-chat --device=cuda --datasets=mmlu_gen --models=vllm_deepseek_moe_16b.py --work-dir=outputs/deepseek-moe-16b-chat"
     },
-	
+
     {
         "model_name": "deepseek-llm-67b-base",
-        "args": "--vllm-path=deepseek-llm-67b-base --device=cuda --datasets=mmlu_gen --data-dir=tinydata/mmlu --work-dir=outputs --tensor-parallel-size=4 --model-kwargs dtype=float16"
+        "args": "--vllm-path=deepseek-llm-67b-base --device=cuda --datasets=mmlu_gen --data-dir=tinydata/mmlu --work-dir=outputs/deepseek-llm-67b-base --tensor-parallel-size=4 --model-kwargs dtype=float16"
+    },
+
+    {
+        "model_name": "DeepSeek-V2-Lite-Chat-bf16",
+        "args": "--vllm-path=DeepSeek-V2-Lite-Chat --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval --work-dir=outputs/DeepSeek-V2-Lite-Chat --tensor-parallel-size=1 --max-out-len=10 --model-kwargs dtype=bfloat16 max_model_len=8192"
     }
 ]
