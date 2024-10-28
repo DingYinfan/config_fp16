@@ -1,0 +1,6 @@
+[
+    {
+        "model_name": "glm-4-32B_chat_vllm_convert-w4a16",
+        "args": "--model==glm-4-32B_chat_vllm_convert-w4a16 --device=cuda --dataset=./llm_samples_new/chatglm/glm-4-32b-chat-w4a16.json --output-len=64 --trust-remote-code --max-model-len=8192 --dtype=float16 -tp=4 --quantization=gptq --save-output=./output/chatglm/glm-4-32b-chat-w4a16.json"
+    }
+]

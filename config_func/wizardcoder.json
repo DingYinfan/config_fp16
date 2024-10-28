@@ -3,9 +3,9 @@
         "model_name": "WizardCoder-15B-v1.0",
         "args": "--model=WizardCoder-15B-v1.0/ --device=cuda --dtype=float16 --dataset=./llm_samples_new/wizardcoder/wizardcoder_15b-half.json --tensor-parallel-size=1 --save-output=./output/wizardcoder/wizardcoder_15b-half.json --template=templates/template_wizardcoder_completion.jinja"
     },
- 
+
   	{
         "model_name": "WizardCoder-33B-v1.1",
-        "args": "--model=WizardCoder-33B-v1.1 --device=cuda --dtype=bfloat16 --max-model-len=2048 --dataset=./llm_samples_new/wizardcoder/wizardcoder_33b_v1.1-half.json --tensor-parallel-size=2 --save-output=./output/wizardcoder/wizardcoder_33b_v1.1-half.json --template=templates/template_wizardcoder_completion.jinja"
+        "args": "--model=WizardCoder-33B-v1.1 --device=cuda --dtype=float16 --max-model-len=2048 --dataset=./llm_samples_new/wizardcoder/wizardcoder_33b_v1.1-half.json --tensor-parallel-size=2 --save-output=./output/wizardcoder/wizardcoder_33b_v1.1-half.json --template=templates/template_wizardcoder_completion.jinja"
     }
 ]

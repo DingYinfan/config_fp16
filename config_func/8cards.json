@@ -1,6 +1,16 @@
 [	
     {
-        "model_name": "mixtral-8x22b-v0.1",
+        "model_name": "mixtral-8x22b-v0.1-bf16",
         "args": "--model=mixtral-8x22b-v0.1 --device=cuda --tensor-parallel-size 8 --dtype bfloat16 --max-model-len 8192 --dataset=./llm_samples_new/mixtral/Mixtral-8x22B-v0.1-max8192-auto-cuda.json --save-output=./output/mixtral/Mixtral-8x22B-v0.1-max8192-auto-cuda.json"
+    },
+
+    {
+        "model_name": "dbrx-instruct",
+        "args": "--model=dbrx-instruct --device=cuda --tensor-parallel-size 8 --dtype=float16 --max-model-len=4096 --dataset=./llm_samples_new/dbrx/dbrx-instruct-float16-golden.json --save-output=./output/dbrx/dbrx-instruct-float16-golden.json --trust-remote-code"
+    },
+    
+    {
+        "model_name": "qwen2-72b-instruct",
+        "args": "--model=qwen2-72b-instruct --device=cuda --dtype=float16 --max-model-len=32768 --dataset=./llm_samples_new/qwen/Qwen2-72B-Instruct-float16.json --tensor-parallel-size 8  --save-output=./output/qwen/Qwen2-72B-Instruct-float16.json"
     }
 ]

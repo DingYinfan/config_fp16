@@ -27,5 +27,15 @@
     {
         "model_name": "Meta-Llama-3-70B",
         "args": "--model=Meta-Llama-3-70B --device=cuda --dtype=float16 --max-model-len=8192 --dataset=./llm_samples_new/llama3/Meta-Llama-3-70B-half.json --tensor-parallel-size=4 --save-output=./output/llama3/Meta-Llama-3-70B-half.json"
+    },
+
+    {
+        "model_name": "llama-2-7b-chat-gptq",
+        "args": "--model=llama-2-7b-chat-gptq --device=cuda --gpu-memory-utilization=0.945 --dtype=float16 --max-model-len=4096 --dataset=./llm_samples_new/llama2/Llama-2-7B-Chat-GPTQ-auto-quantization.json --tensor-parallel-size=1 --quantization=gptq --save-output=./output/llama2/Llama-2-7B-Chat-GPTQ-auto-quantization.json"
+    },
+
+    {
+        "model_name": "llama2_70b_w4a16_gptq",
+        "args": "--model=llama2_70b_w4a16_gptq --device=cuda --quantization=gptq --tensor-parallel-size=2 --dtype=float16 --max-model-len=2048 --dataset=./llm_samples_new/llama2/llama2_70b_w4a16_gptq-float16.json --save-output=./output/llama2/llama2_70b_w4a16_gptq-float16.json"
     }
 ]

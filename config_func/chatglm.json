@@ -3,32 +3,32 @@
         "model_name": "chatglm2-6b",
         "args": "--model=chatglm2-6b --device=cuda --dtype=float16 --max-model-len=32768 --dataset=./llm_samples_new/chatglm/chatglm2_6b-half.json --tensor-parallel-size=1 --save-output=./output/chatglm/chatglm2_6b-half.json --trust-remote-code"
     },
-    
+
     {
         "model_name": "chatglm2-6b-32k",
         "args": "--model=chatglm2-6b-32k --device=cuda --dtype=float16 --max-model-len=32768 --dataset=./llm_samples_new/chatglm/chatglm2_6b_32k-half.json --tensor-parallel-size=1 --save-output=./output/chatglm/chatglm2_6b_32k-half.json --trust-remote-code"
     },
-    
+
     {
         "model_name": "chatglm3-6b",
         "args": "--model=chatglm3-6b --device=cuda --dtype=float16 --max-model-len=8192 --dataset=./llm_samples_new/chatglm/chatglm3_6b-half.json --tensor-parallel-size=1 --save-output=./output/chatglm/chatglm3_6b-half.json --trust-remote-code"
     },
-    
+
     {
         "model_name": "chatglm3-6b-32k",
         "args": "--model=chatglm3-6b-32k --device=cuda --dtype=float16 --max-model-len=32768 --dataset=./llm_samples_new/chatglm/chatglm3_6b_32k-half.json --tensor-parallel-size=1 --save-output=./output/chatglm/chatglm3_6b_32k-half.json --trust-remote-code"
     },
-    
+
     {
-        "model_name": "glm-4-9b-chat",
+        "model_name": "glm-4-9b-chat-bf16",
         "args": "--model=glm-4-9b-chat --device=cuda --dtype=bfloat16 --max-model-len=32768 --dataset=./llm_samples_new/chatglm/glm-4-9b-chat-32k-bf16.json --tensor-parallel-size=1 --save-output=./output/chatglm/glm-4-9b-chat-32k-bf16.json --trust-remote-code"
     },
-    
+
     {
         "model_name": "glm-4-9b-chat",
         "args": "--model=glm-4-9b-chat --device=cuda --dtype=float16 --max-model-len=32768 --dataset=./llm_samples_new/chatglm/glm-4-9b-chat-32k-fp16.json --tensor-parallel-size=1 --save-output=./output/chatglm/glm-4-9b-chat-32k-fp16.json --trust-remote-code"
     },
-        
+
     {
         "model_name": "glm-4-9b",
         "args": "--model=glm-4-9b --device=cuda --dtype=float16 --max-model-len=8192 --dataset=./llm_samples_new/chatglm/glm-4-9b-float16.json --tensor-parallel-size=1 --save-output=./output/chatglm/glm-4-9b-float16.json --trust-remote-code"
