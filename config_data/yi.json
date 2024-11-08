@@ -17,5 +17,15 @@
     {
         "model_name": "Yi-1.5-34B",
         "args": "--vllm-path=Yi-1.5-34B --device=cuda --datasets=mmlu_gen_79e572 --data-dir=tinydata/mmlu --work-dir=outputs/Yi-1.5-34B --tensor-parallel-size 2 --model-kwargs dtype=float16"
+    },
+ 
+    {
+        "model_name": "yi-1.5-34b-chat-gptq",
+        "args": "--vllm-path=yi-1.5-34b-chat-gptq --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval --work-dir=outputs/yi-1.5-34b-chat-gptq --tensor-parallel-size=2 --max-out-len=10 --batch-size=4 --model-kwargs dtype=float16 max_model_len=4096 quantization=gptq"
+    },
+
+    {
+        "model_name": "yi_34b_chat_w8a16_gptq",
+        "args": "--vllm-path=yi_34b_chat_w8a16_gptq --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval/ --work-dir=./outputs/yi_34b_chat_w8a16_gptq --tensor-parallel-size=2 --max-out-len=10 --model-kwargs dtype=float16 quantization=gptq"
     }
 ]

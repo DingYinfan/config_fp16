@@ -6,6 +6,31 @@
 
     {
         "model_name": "glm-4-9b-chat",
-        "args": "--vllm-path=glm-4-9b-chat --device=cuda --datasets=mmlu_gen --batch-size=8 --work-dir=outputs/glm-4-9b-chat --model-kwargs max_model_len=32768 dtype=float16"
+        "args": "--vllm-path=glm-4-9b-chat --device=cuda --datasets=mmlu_gen --batch-size=8 --work-dir=outputs/glm-4-9b-chat --model-kwargs max_model_len=32768 dtype=float16 gpu_memory_utilization=0.5"
+    },
+
+    {
+        "model_name": "chatglm2_6b_w8a16_gptq",
+        "args": "--vllm-path=chatglm2_6b_w8a16_gptq --device=cuda --datasets=mmlu_gen --data-dir=tinydata/mmlu --work-dir=outputs/chatglm2_6b_w8a16_gptq --tensor-parallel-size=1 --model-kwargs dtype=float16 quantization=gptq"
+    },
+	
+    {
+        "model_name": "chatglm2_6b_32k_w8a16_gptq",
+        "args": "--vllm-path=chatglm2_6b_32k_w8a16_gptq --device=cuda --datasets=mmlu_gen --data-dir=tinydata/mmlu --work-dir=outputs/chatglm2_6b_32k_w8a16_gptq --tensor-parallel-size=1 --model-kwargs dtype=float16 quantization=gptq"
+    },
+	
+    {
+        "model_name": "chatglm3_6b_w8a16_gptq",
+        "args": "--vllm-path=chatglm3_6b_w8a16_gptq --device=cuda --datasets=mmlu_gen_79e572 --data-dir=tinydata/mmlu --work-dir=outputs/chatglm3_6b_w8a16_gptq --tensor-parallel-size=1 --model-kwargs dtype=float16 quantization=gptq"
+    },
+	
+    {
+        "model_name": "chatglm3_6b_32k_w8a16_gptq",
+        "args": "--vllm-path=chatglm3_6b_32k_w8a16_gptq --device=cuda --datasets=mmlu_gen_79e572 --data-dir=tinydata/mmlu --work-dir=outputs/chatglm3_6b_32k_w8a16_gptq --tensor-parallel-size=1 --model-kwargs dtype=float16 quantization=gptq"
+    },
+ 
+    {
+        "model_name": "glm_4_9b_w8a16_gptq",
+        "args": "--vllm-path=glm_4_9b_w8a16_gptq --device=cuda --datasets=mmlu_ppl --batch-size=8 --work-dir=outputs/glm_4_9b_w8a16_gptq --model-kwargs dtype=float16 quantization=gptq gpu_memory_utilization=0.5"
     }
 ]

@@ -27,5 +27,10 @@
     {
         "model_name": "internlm2-chat-20b",
         "args": "--model=internlm2-chat-20b --device=cuda --dtype=float16 --dataset=./llm_samples_new/internlm/internlm2-chat-20b-half.json --tensor-parallel-size=2 --save-output=./output/internlm/internlm2-chat-20b-half.json --trust-remote-code"
+    },
+
+    {
+        "model_name": "internlm_7b_w8a16_gptq",
+        "args": "--model=internlm_7b_w8a16_gptq --device=cuda --dtype=float16 --max-model-len 2048 --quantization=gptq --dataset=./llm_samples_new/internlm/internlm_7b-w8a16.json --tensor-parallel-size=1 --save-output=./output/internlm/internlm_7b-w8a16.json  --trust-remote-code"
     }
 ]

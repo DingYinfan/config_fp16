@@ -6,6 +6,6 @@
 
     {
         "model_name": "glm-4-32B_chat_vllm_convert-w4a16",
-        "args": "--vllm-path=yi-1.5-34b-chat-gptq --device cuda --datasets=ceval_gen --data-dir=ceval --work-dir=outputs --tensor-parallel-size=2 --max-out-len=10 --batch-size=4 --model-kwargs dtype=float16 max_model_len=4096"
+        "args": "--vllm-path=glm-4-32B_chat_vllm_convert-w4a16 --device=cuda --datasets=ceval_gen --batch-size=8 --work-dir=outputs/glm-4-32B_chat_vllm_convert-w4a16 --model-kwargs dtype=float16 quantization=gptq --tensor-parallel-size=4"
     }
 ]

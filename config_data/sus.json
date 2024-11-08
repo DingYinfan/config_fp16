@@ -1,0 +1,6 @@
+[
+    {
+        "model_name": "sus_chat_34b_w8a16_gptq",
+        "args": "--vllm-path=sus_chat_34b_w8a16_gptq --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval --work-dir=outputs/sus_chat_34b_w8a16_gptq --tensor-parallel-size=2 --max-out-len=10 --batch-size=4 --model-kwargs dtype=float16 max_model_len=8192"
+    }
+]

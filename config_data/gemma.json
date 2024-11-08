@@ -2,5 +2,10 @@
     {
         "model_name": "gemma-7b",
         "args": "--vllm-path=gemma-7b --device=cuda --datasets=mmlu_gen --data-dir=tinydata/mmlu --work-dir=outputs/gemma-7b --tensor-parallel-size=1 --model-kwargs dtype=float16"
+    },
+
+    {
+        "model_name": "gemma_7b_w8a16_gptq",
+        "args": "--vllm-path=gemma_7b_w8a16_gptq --device=cuda --datasets=mmlu_gen --data-dir=tinydata/mmlu --work-dir=outputs/gemma_7b_w8a16_gptq --model-kwargs quantization=gptq"
     }
 ]

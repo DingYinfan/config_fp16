@@ -7,5 +7,15 @@
     {
         "model_name": "Baichuan2-13B-Base",
         "args": "--model=Baichuan2-13B-Base --device=cuda --gpu-memory-utilization=0.8 --dtype=float16 --max-model-len=4096 --dataset=./llm_samples_new/baichuan2/baichuan2-13B-base-half.json --tensor-parallel-size=1 --save-output=./output/baichuan2/baichuan2-13B-base-half.json --seed=1 --trust-remote-code"
+    },
+
+    {
+        "model_name": "baichuan2_7b_w8a16_gptq",
+        "args": "--model=baichuan2_7b_w8a16_gptq --device=cuda --dtype=float16 --max-model-len=4096 --quantization=gptq --dataset=./llm_samples_new/baichuan2/baichuan2-7B-base-w8a16.json --tensor-parallel-size=1 --save-output=./output/baichuan2/baichuan2-7B-base-w8a16.json --trust-remote-code"
+    },
+    
+    {
+        "model_name": "baichuan2_13b_w8a16_gptq",
+        "args": "--model=baichuan2_13b_w8a16_gptq --device=cuda --gpu-memory-utilization=0.8 --dtype=float16 --max-model-len=4096 --quantization=gptq --dataset=./llm_samples_new/baichuan2/baichuan2-13B-w8a16.json --tensor-parallel-size=1 --save-output=./output/baichuan2/baichuan2-13B-w8a16.json  --seed=15 --trust-remote-code"
     }
 ]

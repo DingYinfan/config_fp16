@@ -1,0 +1,6 @@
+[
+    {
+        "model_name": "sus_chat_34b_w8a16_gptq",
+        "args": "--model=sus_chat_34b_w8a16_gptq --device=cuda --dtype=float16 --quantization=gptq --max-model-len=8192 --dataset=./llm_samples_new/sus/sus-chat-34b_w8a16-float16.json --tensor-parallel-size=2 --save-output=./output/sus/sus-chat-34b_w8a16-float16.json"
+    }
+]

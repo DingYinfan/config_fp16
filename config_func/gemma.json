@@ -2,5 +2,10 @@
     {
         "model_name": "gemma-7b",
         "args": "--model=gemma-7b --device=cuda --dtype=float16 --dataset=./llm_samples_new/gemma/gemma_7b-half.json --tensor-parallel-size=1 --save-output=./output/gemma/gemma_7b-half.json"
+    },
+
+    {
+        "model_name": "gemma_7b_w8a16_gptq",
+        "args": "--model=gemma_7b_w8a16_gptq --device=cuda --tensor-parallel-size=1 --dtype=float16 --max-model-len=8192 --quantization=gptq --dataset=./llm_samples_new/gemma/gemma-7b-quant-float16-w8a16.json --save-output=./output/gemma/gemma-7b-quant-float16-w8a16.json"
     }
 ]

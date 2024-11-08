@@ -37,5 +37,35 @@
     {
         "model_name": "yi-34b-200k",
         "args": "--vllm-path=yi-34b-200k --device=cuda --datasets=longbench --data-dir=tinydata/LongBench --work-dir=outputs/yi-34b-200k --tensor-parallel-size=8 --max-out-len=10 --model-kwargs dtype=float16  max_model_len=200000"
-    } 
+    },
+
+    {
+        "model_name": "bloomz_176b_w8a16_gptq",
+        "args": "--vllm-path=bloomz_176b_w8a16_gptq --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval --work-dir=outputs/bloomz_176b_w8a16_gptq --tensor-parallel-size=8 --model-kwargs dtype=float16 quantization=gptq"
+    },
+
+    {
+        "model_name": "llama2_130b",
+        "args": "--vllm-path=llama_3_70b_w8a16_gptq --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval  --work-dir=outputs/llama2_130b --models=vllm_llama3_70b"
+    },
+
+    {
+        "model_name": "mixtral_8x22b_v0.1_w8a16_gptq",
+        "args": "--vllm-path=mixtral_8x22b_v0.1_w8a16_gptq --device=cuda --datasets ceval_gen --data-dir=tinydata/ceval/formal_ceval --batch-size=4 --max-out-len=10 --work-dir=outputs/mixtral_8x22b_v0.1_w8a16_gptq --tensor-parallel-size=8 --model-kwargs dtype=float16 max_model_len=65536 quantization=gptq"
+    },
+
+    {
+        "model_name": "qwen1.5_110b_chat_w8a16_gptq",
+        "args": "--vllm-path=qwen1.5_110b_chat_w8a16_gptq --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval --tensor-parallel-size=8 --work-dir=outputs/qwen1.5_110b_chat_w8a16_gptq --model-kwargs dtype=float16  max_model_len=32768 gpu_memory_utilization=0.945 quantization=gptq --generation-kwargs temperature=0 --batch-size=32 --max-out-len=100"
+    },
+
+    {
+        "model_name": "qwen1.5_72b_chat_w8a16_gptq",
+        "args": "--vllm-path=qwen1.5_72b_chat_w8a16_gptq --device=cuda --datasets=mmlu_gen --data-dir=tinydata/mmlu --tensor-parallel-size=8 --work-dir outputs/qwen1.5_72b_chat_w8a16_gptq --model-kwargs dtype=float16 max_model_len=32768 gpu_memory_utilization=0.945 quantization=gptq --batch-size=4 --max-out-len=10"
+    },
+	
+    {
+        "model_name": "qwen2_72b_w8a16_gptq",
+        "args": "--vllm-path=qwen2_72b_w8a16_gptq --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval/ --tensor-parallel-size=8 --work-dir=outputs/qwen2_72b_w8a16_gptq --model-kwargs dtype=float16 gpu_memory_utilization=0.945 max_model_len=32768 quantization=gptq --batch-size=16 --max-out-len=100"
+    }
 ]
